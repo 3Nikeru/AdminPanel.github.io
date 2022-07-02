@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Admin Panel</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="menu">
+      <a href="#" class="menu-btn"><img src="https://img.icons8.com/ios-filled/50/4f46e5/circled-menu.png"/></a>
+      <div class="logo"><img src="icons/logo.svg" class="logo" alt="logo"></div>
+      <nav class="menu-list">
+        <div class="main_link">
+          <ul>
+            <li><a href="#"><img src="icons/stars.png" alt="star"><p>Dashboard</p></a></li>
+            <li><a href="#"><img src="icons/check.png" alt="check"><p>Tasks</p></a></li>
+          </ul>
+        </div>
+        <div class="secondary_link">
+          <h6>MARKETING</h6>
+          <ul>
+            <li><a href="#"><img src="icons/contacts.png" alt="contact"><p>Contacts</p></a></li>
+            <li><a href="#"><img src="icons/content.png" alt="content"><p>Content</p></a></li>
+            <li><a href="#"><img src="icons/templates.png" alt="template"><p>Template</p></a></li>
+          </ul>
+        </div>
+        <div class="secondary_link">
+          <h6>PLANNING</h6>
+          <ul>
+            <li><a href="#"><img src="icons/contacts.png" alt="contact"><p>Destintations</p></a></li>
+            <li><a href="#"><img src="icons/search_admin.png" alt="Search"><p>Search Supply</p></a></li>
+            <li><a href="#"><img src="icons/suppliers.png" alt="supliers"><p>Suppliers</p></a></li>
+            <li><a href="#"><img src="icons/trips.png" alt="trip"><p>Trips</p></a></li>
+            <li><a href="#"><img src="icons/community.png" alt="community"><p>Community</p></a></li>
+          </ul>
+        </div>
+        <div class="secondary_link">
+          <h6>BUSINESS</h6>
+          <ul>
+            <li><a href="#"><img src="icons/commisions.png" alt="commisions"><p>Commissions</p></a></li>
+            <li><a href="#"><img src="icons/reports.png" alt="report"><p>Reports</p></a></li>
+          </ul>
+        </div>
+        <div class="secondary_link">
+          <ul>
+            <li><a href="#"><img src="icons/help.png" alt="help"><p>Training & Help</p></a></li>
+            <li><a href="#"><img src="icons/setting.png" alt="Settings"><p>Settings</p></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <main class="content">
+        <header>
+          <div class="page_nav">
+            <div class="tabs">
+             <a href="#"><h5>HOTELS</h5><p>170,802</p></a>
+             <a href="#"><h5>CRUISES</h5><p>57</p></a>
+             <a href="#"><h5>TOURS</h5><p>9</p></a>
+             <a href="#"><h5>CARS</h5><p>13</p></a>
+            </div>
+            <button class="add">
+              <img src="icons/add.png" alt="plus">
+              <p>New Supply</p>
+            </button>
+          </div>
+          <div class="nav_filters">
+            <form>
+                <input type="search" class="search" placeholder="Search items">
+                <button type="button" class="search_btn btn" data-bs-toggle="modal" data-bs-target="#modal"><img src="icons/filters.png" alt="filter"><p>Filters</p></button>
+                
+            </form>
+            <div class="search_input_secondary">
+              <a href="#">Check In</a>
+              <a href="#">Check Out</a>
+              <a href="#">Guests <img src="icons/arrow.png" alt="arrow"></a>
+            </div>
+          </div>
+        </header>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col" class="check"><input type="checkbox" name="check"></th>
+              <th scope="col"><div class="th_flex"><p>NAME</p><img src="icons/column-sorting_one.png" alt="column-sorting"></div></th>
+              <th scope="col"><div class="th_flex"><p>SUPPLIER</p><img src="icons/column-sorting.png" alt="column-sorting"></div></th>
+              <th scope="col"><div class="th_flex"><p>LOCATION</p><img src="icons/column-sorting.png" alt="column-sorting"></div></th>
+              <th scope="col"><div class="th_flex"><p>VIBE</p><img src="icons/column-sorting.png" alt="column-sorting"></div></th>
+              <th scope="col"><div class="th_flex"><p>PERKS</p><img src="icons/column-sorting.png" alt="column-sorting"></div></th>
+              <th scope="col"><div class="th_flex"><p>FROM</p><img src="icons/column-sorting.png" alt="column-sorting"></div></th>
+              <th scope="col"><p>AMENITIES</p></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row" class="check" aria-label="check"><input type="checkbox" name="check"></td>
+              <td class="name" aria-label="NAME">Grand Hotel du Palais Royal</td>
+              <td aria-label="SUPPLIER">Fairmont</td>
+              <td aria-label="LOCATION">Paris, France</td>
+              <td aria-label="VIBE">Sophisticated</td>
+              <td aria-label="PERKS">
+                <div class="green_block">
+                <img src="icons/Rectangle.png" alt="Rectangle"><p>Virtuoso</p>
+                </div>
+              </td>
+              <td aria-label="FROM"><span>US$</span> 10.5k</td>
+              <td class="symbols" aria-label="AMENITIES">
+                <img src="icons/jump-rope.png" alt="jump-rope">
+                <img src="icons/swimming.png" alt="swimming">
+                <img src="icons/pizza.png" alt="pizza">
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" class="check" aria-label="check"><input type="checkbox" name="check"></td>
+              <td class="name" aria-label="NAME">Grand Hotel du Palais Royal</td>
+              <td aria-label="SUPPLIER">Fairmont</td>
+              <td aria-label="LOCATION">Paris, France</td>
+              <td aria-label="VIBE">Sophisticated</td>
+              <td aria-label="PERKS">
+                <div class="green_block">
+                <img src="icons/Rectangle.png" alt="Rectangle"><p>Virtuoso</p>
+                </div>
+              </td>
+              <td aria-label="FROM"><span>US$</span> 10.5k</td>
+              <td class="symbols" aria-label="AMENITIES">
+                <img src="icons/jump-rope.png" alt="jump-rope">
+                <img src="icons/swimming.png" alt="swimming">
+                <img src="icons/pizza.png" alt="pizza">
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" class="check" aria-label="check"><input type="checkbox" name="check"></td>
+              <td class="name" aria-label="NAME">Grand Hotel du Palais Royal</td>
+              <td aria-label="SUPPLIER">Fairmont</td>
+              <td aria-label="LOCATION">Paris, France</td>
+              <td aria-label="VIBE">Sophisticated</td>
+              <td aria-label="PERKS">
+                <div class="green_block">
+                <img src="icons/Rectangle.png" alt="Rectangle"><p>Virtuoso</p>
+                </div>
+              </td>
+              <td aria-label="FROM"><span>US$</span> 10.5k</td>
+              <td class="symbols" aria-label="AMENITIES">
+                <img src="icons/jump-rope.png" alt="jump-rope">
+                <img src="icons/swimming.png" alt="swimming">
+                <img src="icons/pizza.png" alt="pizza">
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" class="check" aria-label="check"><input type="checkbox" name="check"></td>
+              <td class="name" aria-label="NAME">Grand Hotel du Palais Royal</td>
+              <td aria-label="SUPPLIER">Fairmont</td>
+              <td aria-label="LOCATION">Paris, France</td>
+              <td aria-label="VIBE">Sophisticated</td>
+              <td aria-label="PERKS">
+                <div class="green_block">
+                <img src="icons/Rectangle.png" alt="Rectangle"><p>Fairmont Plus</p>
+                </div>
+              </td>
+              <td aria-label="FROM"><span>US$</span> 10.5k</td>
+              <td class="symbols" aria-label="AMENITIES">
+                <img src="icons/jump-rope.png" alt="jump-rope">
+                <img src="icons/swimming.png" alt="swimming">
+                <img src="icons/pizza.png" alt="pizza">
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" class="check" aria-label="check"><input type="checkbox" name="check"></td>
+              <td class="name" aria-label="NAME">Grand Hotel du Palais Royal</td>
+              <td aria-label="SUPPLIER">Fairmont</td>
+              <td aria-label="LOCATION">Paris, France</td>
+              <td aria-label="VIBE">Sophisticated</td>
+              <td aria-label="PERKS">
+                <div class="green_block">
+                <img src="icons/Rectangle.png" alt="Rectangle"><p>Virtuoso</p>
+                </div>
+              </td>
+              <td aria-label="FROM"><span>US$</span> 10.5k</td>
+              <td class="symbols" aria-label="AMENITIES">
+                <img src="icons/jump-rope.png" alt="jump-rope">
+                <img src="icons/swimming.png" alt="swimming">
+                <img src="icons/pizza.png" alt="pizza">
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" class="check" aria-label="check"><input type="checkbox" name="check"></td>
+              <td class="name" aria-label="NAME">Grand Hotel du Palais Royal</td>
+              <td aria-label="SUPPLIER">Fairmont</td>
+              <td aria-label="LOCATION">Paris, France</td>
+              <td aria-label="VIBE">Sophisticated</td>
+              <td aria-label="PERKS">
+                <div class="green_block">
+                <img src="icons/Rectangle.png" alt="Rectangle"><p>Virtuoso</p>
+                </div>
+              </td>
+              <td aria-label="FROM"><span>US$</span> 10.5k</td>
+              <td class="symbols" aria-label="AMENITIES">
+                <img src="icons/jump-rope.png" alt="jump-rope">
+                <img src="icons/swimming.png" alt="swimming">
+                <img src="icons/pizza.png" alt="pizza">
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" class="check" aria-label="check"><input type="checkbox" name="check"></td>
+              <td class="name" aria-label="NAME">Grand Hotel du Palais Royal</td>
+              <td aria-label="SUPPLIER">Fairmont</td>
+              <td aria-label="LOCATION">Paris, France</td>
+              <td aria-label="VIBE">Sophisticated</td>
+              <td aria-label="PERKS">
+                <div class="green_block">
+                <img src="icons/Rectangle.png" alt="Rectangle"><p>Virtuoso</p>
+                </div>
+              </td>
+              <td aria-label="FROM"><span>US$</span> 10.5k</td>
+              <td class="symbols" aria-label="AMENITIES">
+                <img src="icons/jump-rope.png" alt="jump-rope">
+                <img src="icons/swimming.png" alt="swimming">
+                <img src="icons/pizza.png" alt="pizza">
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" class="check" aria-label="check"><input type="checkbox" name="check"></td>
+              <td class="name" aria-label="NAME">Grand Hotel du Palais Royal</td>
+              <td aria-label="SUPPLIER">Fairmont</td>
+              <td aria-label="LOCATION">Paris, France</td>
+              <td aria-label="VIBE">Sophisticated</td>
+              <td aria-label="PERKS">
+                <div class="green_block">
+                <img src="icons/Rectangle.png" alt="Rectangle"><p>Virtuoso</p>
+                </div>
+              </td>
+              <td aria-label="FROM"><span>US$</span> 10.5k</td>
+              <td class="symbols" aria-label="AMENITIES">
+                <img src="icons/jump-rope.png" alt="jump-rope">
+                <img src="icons/swimming.png" alt="swimming">
+                <img src="icons/pizza.png" alt="pizza">
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" class="check" aria-label="check"><input type="checkbox" name="check"></td>
+              <td class="name" aria-label="NAME">Grand Hotel du Palais Royal</td>
+              <td aria-label="SUPPLIER">Fairmont</td>
+              <td aria-label="LOCATION">Paris, France</td>
+              <td aria-label="VIBE">Sophisticated</td>
+              <td aria-label="PERKS">
+                <div class="green_block">
+                <img src="icons/Rectangle.png" alt="Rectangle"><p>Virtuoso</p>
+                </div>
+              </td>
+              <td aria-label="FROM"><span>US$</span> 10.5k</td>
+              <td class="symbols" aria-label="AMENITIES">
+                <img src="icons/jump-rope.png" alt="jump-rope">
+                <img src="icons/swimming.png" alt="swimming">
+                <img src="icons/pizza.png" alt="pizza">
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" class="check" aria-label="check"><input type="checkbox" name="check"></td>
+              <td class="name" aria-label="NAME">Grand Hotel du Palais Royal</td>
+              <td aria-label="SUPPLIER">Fairmont</td>
+              <td aria-label="LOCATION">Paris, France</td>
+              <td aria-label="VIBE">Sophisticated</td>
+              <td aria-label="PERKS">
+                <div class="green_block">
+                <img src="icons/Rectangle.png" alt="Rectangle"><p>Virtuoso</p>
+                </div>
+              </td>
+              <td aria-label="FROM"><span>US$</span> 10.5k</td>
+              <td class="symbols" aria-label="AMENITIES">
+                <img src="icons/jump-rope.png" alt="jump-rope">
+                <img src="icons/swimming.png" alt="swimming">
+                <img src="icons/pizza.png" alt="pizza">
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" class="check" aria-label="check"><input type="checkbox" name="check"></td>
+              <td class="name" aria-label="NAME">Grand Hotel du Palais Royal</td>
+              <td aria-label="SUPPLIER">Fairmont</td>
+              <td aria-label="LOCATION">Paris, France</td>
+              <td aria-label="VIBE">Sophisticated</td>
+              <td aria-label="PERKS">
+                <div class="green_block">
+                <img src="icons/Rectangle.png" alt="Rectangle"><p>Virtuoso</p>
+                </div>
+              </td>
+              <td aria-label="FROM"><span>US$</span> 10.5k</td>
+              <td class="symbols" aria-label="AMENITIES">
+                <img src="icons/jump-rope.png" alt="jump-rope">
+                <img src="icons/swimming.png" alt="swimming">
+                <img src="icons/pizza.png" alt="pizza">
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" class="check" aria-label="check"><input type="checkbox" name="check"></td>
+              <td class="name" aria-label="NAME">Grand Hotel du Palais Royal</td>
+              <td aria-label="SUPPLIER">Fairmont</td>
+              <td aria-label="LOCATION">Paris, France</td>
+              <td aria-label="VIBE">Sophisticated</td>
+              <td aria-label="PERKS">
+                <div class="green_block">
+                <img src="icons/Rectangle.png" alt="Rectangle"><p>Virtuoso</p>
+                </div>
+              </td>
+              <td aria-label="FROM"><span>US$</span> 10.5k</td>
+              <td class="symbols" aria-label="AMENITIES">
+                <img src="icons/jump-rope.png" alt="jump-rope">
+                <img src="icons/swimming.png" alt="swimming">
+                <img src="icons/pizza.png" alt="pizza">
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" class="check" aria-label="check"><input type="checkbox" name="check"></td>
+              <td class="name" aria-label="NAME">Grand Hotel du Palais Royal</td>
+              <td aria-label="SUPPLIER">Fairmont</td>
+              <td aria-label="LOCATION">Paris, France</td>
+              <td aria-label="VIBE">Sophisticated</td>
+              <td aria-label="PERKS">
+                <div class="green_block">
+                <img src="icons/Rectangle.png" alt="Rectangle"><p>Virtuoso</p>
+                </div>
+              </td>
+              <td aria-label="FROM"><span>US$</span> 10.5k</td>
+              <td class="symbols" aria-label="AMENITIES">
+                <img src="icons/jump-rope.png" alt="jump-rope">
+                <img src="icons/swimming.png" alt="swimming">
+                <img src="icons/pizza.png" alt="pizza">
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" class="check" aria-label="check"><input type="checkbox" name="check"></td>
+              <td class="name" aria-label="NAME">Grand Hotel du Palais Royal</td>
+              <td aria-label="SUPPLIER">Fairmont</td>
+              <td aria-label="LOCATION">Paris, France</td>
+              <td aria-label="VIBE">Sophisticated</td>
+              <td aria-label="PERKS">
+                <div class="green_block">
+                <img src="icons/Rectangle.png" alt="Rectangle"><p>Virtuoso</p>
+                </div>
+              </td>
+              <td aria-label="FROM"><span>US$</span> 10.5k</td>
+              <td class="symbols" aria-label="AMENITIES">
+                <img src="icons/jump-rope.png" alt="jump-rope">
+                <img src="icons/swimming.png" alt="swimming">
+                <img src="icons/pizza.png" alt="pizza">
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" class="check" aria-label="check"><input type="checkbox" name="check"></td>
+              <td class="name" aria-label="NAME">Grand Hotel du Palais Royal</td>
+              <td aria-label="SUPPLIER">Fairmont</td>
+              <td aria-label="LOCATION">Paris, France</td>
+              <td aria-label="VIBE">Sophisticated</td>
+              <td aria-label="PERKS">
+                <div class="green_block">
+                <img src="icons/Rectangle.png" alt="Rectangle"><p>Virtuoso</p>
+                </div>
+              </td>
+              <td aria-label="FROM"><span>US$</span> 10.5k</td>
+              <td class="symbols" aria-label="AMENITIES">
+                <img src="icons/jump-rope.png" alt="jump-rope">
+                <img src="icons/swimming.png" alt="swimming">
+                <img src="icons/pizza.png" alt="pizza">
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" class="check" aria-label="check"><input type="checkbox" name="check"></td>
+              <td class="name" aria-label="NAME">Grand Hotel du Palais Royal</td>
+              <td aria-label="SUPPLIER">Fairmont</td>
+              <td aria-label="LOCATION">Paris, France</td>
+              <td aria-label="VIBE">Sophisticated</td>
+              <td aria-label="PERKS">
+                <div class="green_block">
+                <img src="icons/Rectangle.png" alt="Rectangle"><p>Virtuoso</p>
+                </div>
+              </td>
+              <td aria-label="FROM"><span>US$</span> 10.5k</td>
+              <td class="symbols" aria-label="AMENITIES">
+                <img src="icons/jump-rope.png" alt="jump-rope">
+                <img src="icons/swimming.png" alt="swimming">
+                <img src="icons/pizza.png" alt="pizza">
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" class="check" aria-label="check"><input type="checkbox" name="check"></td>
+              <td class="name" aria-label="NAME">Grand Hotel du Palais Royal</td>
+              <td aria-label="SUPPLIER">Fairmont</td>
+              <td aria-label="LOCATION">Paris, France</td>
+              <td aria-label="VIBE">Sophisticated</td>
+              <td aria-label="PERKS">
+                <div class="green_block">
+                <img src="icons/Rectangle.png" alt="Rectangle"><p>Virtuoso</p>
+                </div>
+              </td>
+              <td aria-label="FROM"><span>US$</span> 10.5k</td>
+              <td class="symbols" aria-label="AMENITIES">
+                <img src="icons/jump-rope.png" alt="jump-rope">
+                <img src="icons/swimming.png" alt="swimming">
+                <img src="icons/pizza.png" alt="pizza">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <footer>
+          <p>Showing 1 to 20 of 170,802 results</p>
+          <div class="footer_pageNav">
+            <p>Rows per page: 20 <img src="icons/down.png" alt="arrow_down"></p>
+            <div class="nav_buttons">
+              <button>Previous</button>
+              <button>Next</button>
+            </div>
+          </div>
+        </footer>
+    </main>
+  </div>
+      <!-- Modal -->
+      <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Choose filter</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div> -->
+            <div class="modal-body">
+              <img class="img-fluid" src="/examples/images/admin-dashboard.jpg" alt="">
+              <div class="add_filter"><p>Choose</p><input type="checkbox" name="check"></div>
+              <div class="add_filter"><p>Choose</p><input type="checkbox" name="check"></div>
+              <div class="add_filter"><p>Choose</p><input type="checkbox" name="check"></div>
+              <div class="add_filter"><p>Choose</p><input type="checkbox" name="check"></div>
+              <div class="add_filter"><p>Choose</p><input type="checkbox" name="check"></div>
+              <div class="add_filter"><p>Choose</p><input type="checkbox" name="check"></div>
+              <div class="add_filter"><p>Choose</p><input type="checkbox" name="check"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn">Apply</button>
+              <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End modal -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
