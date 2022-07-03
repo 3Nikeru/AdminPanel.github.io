@@ -474,6 +474,19 @@ footer{
     .content_active{
         width: 70%;
     }
+    .nav_filters{
+        position: relative;
+        height: 100px;
+    }
+    form{
+        margin-right: 10%;
+        position: absolute;
+        top: 0;
+    }
+    .search_input_secondary{
+        position: absolute;
+        bottom: 0;
+    }
     footer{
         display: none;
     }
