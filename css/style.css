@@ -491,6 +491,9 @@ footer{
     .menu_active{
         width: 100%;
     }
+    .menu-list a img{
+        margin-right: 0;
+    }
     .content_active{
         display: none;
         transition: .5s;
