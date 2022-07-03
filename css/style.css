@@ -514,6 +514,9 @@ footer{
     .add {
         padding: 15px 9px;
     }
+    .add_filter{
+        margin-bottom: 10%;
+    }
     input[type='checkbox']:after{
         margin-top: 0;
         margin-left: 0;
