@@ -491,6 +491,9 @@ footer{
     .menu_active{
         width: 100%;
     }
+    .menu_active .menu-list a img{
+        margin-right: 15px;
+    }
     .menu-list a img{
         margin-right: 0;
     }
