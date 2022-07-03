@@ -464,6 +464,7 @@ footer{
 @media screen and (max-width: 600px){
     .menu{
         width: 10%;
+        padding-bottom: 50px;
     }
     .menu_active{
         width: 30%;
