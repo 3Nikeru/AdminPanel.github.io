@@ -502,7 +502,7 @@ footer{
         width: 87%;
     }
     form{
-        margin-right: 22%;
+        margin-right: 10%;
     }
     .search_btn{
         padding: 0 5px;
@@ -513,5 +513,16 @@ footer{
     }
     footer{
         display: none;
+    }
+}
+@media screen and (max-width: 360px){
+    .search_input_secondary a{
+        font-size: 12px;
+    }
+    .search{
+        margin-left: 2%;
+    }
+    .search_btn{
+        left: 76%;
     }
 }
