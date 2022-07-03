@@ -492,8 +492,14 @@ footer{
     .menu{
         width: 13%;
     }
+    .menu-btn img{
+        right: 20%;
+    }
     .menu_active{
         width: 100%;
+    }
+    .menu_active .menu-btn img{
+        right: 5%;
     }
     .menu_active .menu-list a img{
         margin-right: 15px;
@@ -531,7 +537,10 @@ footer{
         display: none;
     }
 }
-@media screen and (max-width: 360px){
+@media screen and (max-width: 375px){
+    .menu-btn img {
+        right: 14%;
+    }
     .search_input_secondary a{
         font-size: 12px;
     }
