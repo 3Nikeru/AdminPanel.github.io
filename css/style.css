@@ -514,6 +514,8 @@ footer{
     input[type='checkbox']:after{
         margin-top: 0;
         margin-left: 0;
+        width: 18px;
+        height: 18px;
     }
     footer{
         display: none;
