@@ -502,7 +502,7 @@ footer{
         width: 87%;
     }
     form{
-        margin-right: 10%;
+        margin-right: 22%;
     }
     .search_btn{
         padding: 0 5px;
@@ -524,5 +524,8 @@ footer{
     }
     .search_btn{
         left: 76%;
+    }
+    form{
+        margin-right: 10%;
     }
 }
